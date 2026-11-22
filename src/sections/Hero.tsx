@@ -188,14 +188,16 @@ export function Hero() {
         </motion.div>
 
         <div className="mt-auto grid gap-8 lg:grid-cols-12 lg:items-end">
-          <div className="lg:col-span-8">
+          {/* Tamanho relativo à largura da coluna (container query): "ENGENHARIA" ocupa ~6em,
+              então 16cqi garante que a palavra mais longa caiba em qualquer viewport. */}
+          <div className="min-w-0 [container-type:inline-size] lg:col-span-8">
             <MaskLines
               as="h1"
               id="hero-title"
               immediate
               delay={0.75}
               lines={['Engenharia', 'que move', <>o futuro<span className="text-accent">.</span></>]}
-              className="display text-[clamp(2.9rem,14.4vw,9rem)] leading-[0.86] lg:text-[clamp(5rem,9.6vw,10.5rem)]"
+              className="display text-[16cqi] leading-[0.86]"
             />
           </div>
           <motion.div

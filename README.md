@@ -58,6 +58,6 @@ Ambas as licenças permitem uso comercial sem atribuição obrigatória; os cré
 
 ## GitHub Pages
 
-Repo: `solucoes-industriais-demo`. Em Settings > Pages selecione GitHub Actions.
+Repositório: `solucoes-industriais-demo`. Configure Settings > Pages > GitHub Actions.
 
-Site: https://lorenzo-or7.github.io/solucoes-industriais-demo/
+https://lorenzo-or7.github.io/solucoes-industriais-demo/
