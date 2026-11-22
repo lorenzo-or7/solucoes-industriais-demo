@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>AXIOM Industrial — Engenharia que move o futuro</title>
+    <meta
+      name="description"
+      content="Protótipo demonstrativo de soluções industriais: automação, manutenção, projetos de engenharia, instalações, sistemas eletromecânicos e otimização de processos."
+    />
+    <meta name="theme-color" content="#0B0E11" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F3F5F4" media="(prefers-color-scheme: light)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AXIOM Industrial — Engenharia que move o futuro" />
+    <meta
+      property="og:description"
+      content="Soluções industriais desenvolvidas para transformar desafios técnicos em operações mais eficientes. Protótipo demonstrativo Or7.dev."
+    />
+    <meta property="og:image" content="https://lorenzo-or7.github.io/solucoes-industriais-demo/media/img/hero-robots-1600.webp" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <link rel="preload" as="image" href="%BASE_URL%media/video/hero-poster.webp" type="image/webp" />
+    <script>
+      // Aplica o tema antes da primeira pintura para evitar flash.
+      (function () {
+        try {
+          var stored = localStorage.getItem('axiom-theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: light)').matches
+                ? 'light'
+                : 'dark';
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:24px;font-family:sans-serif">
+        AXIOM Industrial — protótipo demonstrativo. Ative o JavaScript para visualizar a experiência completa.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
